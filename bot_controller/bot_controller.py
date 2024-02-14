@@ -43,7 +43,6 @@ class BotController:
 
         @self.bot.message_handler(commands=["start"])
         def send_welcome(message):
-            print("Received message " + message.text)
             self.bot.reply_to(message, "Howdy, how are you doing?")
 
         @self.bot.message_handler(commands=["help"])
