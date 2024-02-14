@@ -1,3 +1,7 @@
+create_env:
+	@echo "Creating virtual environment..."
+	@python3 -m venv env
+
 open_env:
 	@echo "source env/bin/activate"
 
