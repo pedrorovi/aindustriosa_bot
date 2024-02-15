@@ -63,7 +63,7 @@ class BotController:
 
         @self.bot.message_handler(commands=["tools"])
         def send_tools(message):
-            tools_str = "\n".join(f"{cmd}: {desc}" for cmd, desc in self.tools.items())
+            tools_str = "\n\n".join(f"{cmd}: {desc}" for cmd, desc in self.tools.items())
             self.bot.reply_to(message, tools_str)
 
         @self.bot.message_handler(func=lambda message: True)
